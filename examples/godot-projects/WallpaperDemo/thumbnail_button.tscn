@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=3 uid="uid://bgdel7q704wr2"]
+
+[ext_resource type="Script" path="res://thumbnail_button.gd" id="1_g3m6q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfad2"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.380392)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.591278, 0.113281, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_isov2"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.223529, 0.223529, 0.223529, 0.329412)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7xuc6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101961, 0.101961, 0.101961, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_il1a7"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.380392)
+draw_center = false
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="Theme" id="Theme_8ry8b"]
+Button/styles/focus = SubResource("StyleBoxFlat_tfad2")
+Button/styles/hover = SubResource("StyleBoxFlat_isov2")
+Button/styles/normal = SubResource("StyleBoxFlat_7xuc6")
+Button/styles/pressed = SubResource("StyleBoxFlat_il1a7")
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_tfm6y"]
+allow_unpress = true
+
+[node name="ThumbnailButton" type="Button"]
+custom_minimum_size = Vector2(128, 64)
+size_flags_horizontal = 4
+theme = SubResource("Theme_8ry8b")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_tfm6y")
+script = ExtResource("1_g3m6q")
+
+[node name="Image" type="TextureRect" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6

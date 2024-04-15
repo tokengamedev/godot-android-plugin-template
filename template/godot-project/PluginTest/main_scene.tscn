@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlb6jxoum5c2l"]
+
+[ext_resource type="Script" path="res://main_scene.gd" id="1_7c2xr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mujus"]
+font_size = 32
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7c2xr")
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -56.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 48
+
+[node name="Button" type="Button" parent="Container"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Say Hello"
+
+[node name="Label" type="Label" parent="Container"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_mujus")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Container/Button" to="." method="_on_button_pressed"]
