@@ -12,9 +12,9 @@ This template provides a basic structure about building an android export plugin
 **Pre-requisites:**
 - Godot Engine: 4.2.0 or higher
 - Android Studio or any other tool for gradle build
-> ⚓Note: 
-> 1. For android studio, Android Hedgehog or higher (It may work in previous versions, but not tested)
-> 2. You can even do this using VS Code, but that is also not tested or goal of this exercise.
+> [!NOTE] 
+> 1. Works with Android studio - Hedgehog or higher. It may work in previous versions, but not tested
+> 2. You can even create the arr using VS Code, but that is also not tested or goal of this exercise.
 
 
 ### Part 1: Building the AAR File
@@ -28,7 +28,8 @@ To build the AAR file, we will be using the `godot-android-plugin-template\templ
 - Rename `template` directory under `plugin-template` to name of the plugin sub-project of your willing in the file manager of OS
   - e.g., `hello`
 
-> ⚓Note: In gradle build system, there is a root project and one or more sub-projects. Plugin has to be created as part of one of the sub projects.
+> [!NOTE] 
+> In gradle build system, there is a root project and one or more sub-projects. Plugin has to be created as part of one of the sub projects.
 > If you want to create multiple plugins you can create multiple sub projects under the same root project
 >
 > Checkout: https://github.com/tokengamedev/godot-android-modules
@@ -36,9 +37,9 @@ To build the AAR file, we will be using the `godot-android-plugin-template\templ
 
 #### Step 2: Editing project and sub-project name
 
-> ⚓Note: You can do this step in a text editor or opening the directory in Android studio.
+> [!NOTE]  You can do this step in a text editor or opening the directory in Android studio.
 
-> ⚠️Warning: The project may not display properly in android studio unless the sub-project names are defined properly
+> [!WARNING]  The project may not display properly in android studio unless the sub-project names are defined properly
 
 **Project Name:**
 
@@ -116,7 +117,8 @@ class HelloPlugin(godot: Godot): GodotPlugin(godot)  {
 }
 ```
 
->💡Important: The name of the plugin in `getPluginName` is the Plugin Name to be used for accessing the plugin from godot
+>[!TIP]
+> The name of the plugin in `getPluginName` is the Plugin Name to be used for accessing the plugin from godot
 
 
 #### Step 5: Updating Gradle file for build
@@ -168,7 +170,8 @@ To create scripts, we will be using the `godot-scripts` directory only.
 
 Create\Update the `plugin.cfg` as per your need. It will display in the Project Settings of the Godot Project.
 
->⚓Note: The script file used here is to create a singleton to be accessible inside Godot project. 
+> [!NOTE]
+> The script file used here is to create a singleton to be accessible inside Godot project. 
 ```ini
 [plugin]
 
@@ -208,7 +211,8 @@ const PLUGIN_FILE_NAME = "template-release.aar"
 - Copy the script files into
   
 At the end it somewhat will look like this.
->⚓Note: This is just an example and can be changed as per your needs
+> [!NOTE] 
+> This is just an example and can be changed as per your needs
 
 ```
 <Project Dir>
@@ -225,7 +229,8 @@ At the end it somewhat will look like this.
 - Install build templates for android if it is not installed already
   `> Project > Install Android Build Template..`
 
->⚓Note: if you do not have the android built template for the current version of godot, you may have to download first. 
+> [!NOTE] 
+> if you do not have the android built template for the current version of godot, you may have to download first. 
 
 - Add an android export preset if it is not there
   `> Project > Export..` then `Add`

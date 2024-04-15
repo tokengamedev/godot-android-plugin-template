@@ -13,7 +13,7 @@ To create an android export plugin there are two parts:
 2. Create script files for registering the library with godot project
 
 
-![Image](assets\plugin.png)
+![Image](assets/plugin.png)
 
 
 > [!NOTE]
@@ -38,4 +38,5 @@ This repository consists of:
 
 If you have any questions, feedbacks or challenges, please shoot an email to [Token GameDev](token.gamedev@gmail.com). I am happy to help or improve.
 
-Should this aid in your development and prove beneficial, feel free to spread the word. Your support through a modest donation on [Buying a coffee](https://www.buymeacoffee.com/tokengamedev) would be greatly valued and appreciated.
+Should this aid in your development and prove beneficial, feel free to spread the word. 
+Your support through a modest donation on [Buying a coffee](https://www.buymeacoffee.com/tokengamedev) would be greatly valued and appreciated.
