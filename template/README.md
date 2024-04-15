@@ -37,9 +37,11 @@ To build the AAR file, we will be using the `godot-android-plugin-template\templ
 
 #### Step 2: Editing project and sub-project name
 
-> [!NOTE]  You can do this step in a text editor or opening the directory in Android studio.
+> [!NOTE]
+> You can do this step in a text editor or opening the directory in Android studio.
 
-> [!WARNING]  The project may not display properly in android studio unless the sub-project names are defined properly
+> [!WARNING]
+> The project may not display properly in android studio unless the sub-project names are defined properly
 
 **Project Name:**
 
